@@ -1,0 +1,27 @@
+admin_email: admin@example.com
+
+apps:
+  - name: gallery
+    domain: gallery.example.com
+    php: "8.5"
+    database: sqlite
+    scheduler: true
+    queue: false
+
+  - name: split
+    domain: split.ie
+    php: "8.4"
+    database: mysql
+    scheduler: true
+    queue: true
+    db_name: split
+    db_user: split
+
+  - name: neighbour
+    domain: neighbour.ie
+    php: "8.5"
+    database: mysql
+    scheduler: false
+    queue: true
+    db_name: neighbour
+    db_user: neighbour
