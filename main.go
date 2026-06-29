@@ -225,7 +225,10 @@ func renderTmpl(src string, data any) (string, error) {
 		return "", err
 	}
 	var sb strings.Builder
-	return sb.String(), t.Execute(&sb, data)
+	if err := t.Execute(&sb, data); err != nil {
+		return "", err
+	}
+	return sb.String(), nil
 }
 
 // ---------------------------------------------------------------------------
