@@ -1,0 +1,18 @@
+admin_email: test@example.com
+
+apps:
+  - name: myapp
+    domain: myapp.localhost
+    php: "8.4"
+    database: sqlite
+    scheduler: false
+    queue: false
+
+  - name: myapp2
+    domain: myapp2.localhost
+    php: "8.4"
+    database: mysql
+    scheduler: true
+    queue: true
+    db_name: myapp2
+    db_user: myapp2
