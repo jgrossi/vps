@@ -5,13 +5,13 @@ Provision a self-hosted Laravel platform on a single Ubuntu 24 VPS. One binary, 
 ## Install
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/YOUR/vps/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/jgrossi/vps/main/install.sh | bash
 ```
 
 Or grab the binary directly:
 
 ```bash
-curl -sSL https://github.com/YOUR/vps/releases/latest/download/vps-linux-amd64 -o /usr/local/bin/vps && chmod +x /usr/local/bin/vps
+curl -sSL https://github.com/jgrossi/vps/releases/latest/download/vps-linux-amd64 -o /usr/local/bin/vps && chmod +x /usr/local/bin/vps
 ```
 
 ## Usage

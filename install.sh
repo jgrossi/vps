@@ -2,7 +2,7 @@
 # Usage: curl -sSL https://raw.githubusercontent.com/YOUR/vps/main/install.sh | bash
 set -euo pipefail
 
-REPO="YOUR/vps"
+REPO="jgrossi/vps"
 ARCH=$(uname -m)
 BIN="vps-linux-amd64"
 [ "$ARCH" = "aarch64" ] || [ "$ARCH" = "arm64" ] && BIN="vps-linux-arm64"
